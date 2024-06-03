@@ -1,0 +1,226 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f3f4f6;
+}
+
+.hero-section .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.hero-section .cta-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.hero-section .hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.features-section,
+.gallery-section,
+.testimonials-section,
+.pricing-section,
+.contact-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.features-grid,
+.gallery-grid,
+.testimonials-grid,
+.pricing-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.features-grid,
+.testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.pricing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.feature-item,
+.testimonial-item,
+.pricing-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.pricing-item p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.pricing-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-item ul li {
+    margin-bottom: 10px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #ff4500;
+}
+
+.primary-btn:hover {
+    background-color: #ff5722;
+}
+
+.secondary-btn {
+    background-color: #333;
+}
+
+.secondary-btn:hover {
+    background-color: #555;
+}
+
+.download-btn {
+    background-color: #ff4500;
+}
+
+.download-btn:hover {
+    background-color: #ff5722;
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* Dark Mode */
+.dark {
+    background-color: #1a1a1a;
+    color: #f3f4f6;
+}
+
+.dark .navbar,
+.dark .footer {
+    background-color: #333;
+}
+
+.dark .btn {
+    color: #1a1a1a;
+}
+
+.dark .primary-btn {
+    background-color: #f3f4f6;
+    color: #1a1a1a;
+}
+
+.dark .primary-btn:hover {
+    background-color: #e5e7eb;
+}
+
+.dark .secondary-btn {
+    background-color: #555;
+}
+
+.dark .secondary-btn:hover {
+    background-color: #777;
+}
+
+.dark .download-btn {
+    background-color: #f3f4f6;
+    color: #1a1a1a;
+}
+
+.dark .download-btn:hover {
+    background-color: #e5e7eb;
+}

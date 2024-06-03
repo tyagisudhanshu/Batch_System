@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">uifry</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#features">Features</a></li>
+                </ul>
+                <a href="#download" class="btn download-btn">Download</a>
+            </div>
+        </nav>
+        <div class="hero-content container">
+            <h1>Make The Best Financial Decisions</h1>
+            <p>Cum Et Convallis Risus Placerat Aliquam, Nunc, Scelerisque Aliquet Faucibus Tristi...</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn primary-btn">Get Started</a>
+                <a href="#" class="btn secondary-btn">Watch Video</a>
+            </div>
+            <img src="path/to/phone-image.png" alt="App Preview" class="hero-image">
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Uifry Premium</h2>
+            <div class="features-grid">
+                <div class="feature-item">Budgeting intervals</div>
+                <div class="feature-item">Another feature</div>
+                <div class="feature-item">Yet another feature</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Screenshots</h2>
+            <div class="gallery-grid">
+                <a href="path/to/screenshot1.png" class="gallery-item">
+                    <img src="path/to/screenshot1.png" alt="Screenshot 1">
+                </a>
+                <a href="path/to/screenshot2.png" class="gallery-item">
+                    <img src="path/to/screenshot2.png" alt="Screenshot 2">
+                </a>
+                <a href="path/to/screenshot3.png" class="gallery-item">
+                    <img src="path/to/screenshot3.png" alt="Screenshot 3">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <p>"This app has transformed the way I manage my finances!"</p>
+                    <p class="user-name">- User 1</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Highly recommend for anyone looking to improve their financial habits."</p>
+                    <p class="user-name">- User 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2>Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-item">
+                    <h3>Basic</h3>
+                    <p>$9.99/month</p>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <a href="#" class="btn primary-btn">Get Started</a>
+                </div>
+                <div class="pricing-item">
+                    <h3>Pro</h3>
+                    <p>$19.99/month</p>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <a href="#" class="btn primary-btn">Get Started</a>
+                </div>
+                <div class="pricing-item">
+                    <h3>Premium</h3>
+                    <p>$29.99/month</p>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <a href="#" class="btn primary-btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 uifry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const toggleDarkMode = () => {
+            document.documentElement.classList.toggle('dark');
+        };
+    </script>
+</body>
+</html>
